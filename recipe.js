@@ -8,7 +8,7 @@ this is again the same comment...
 until we write */
 
 console.log("Welcome to the programming kitchen.");
-console.log("We're going to bake some cookies 🍪");
+console.log("We're going to bake some cookies 🍪 \n");
 
 let sugar = 80;
 let butter = 120;
@@ -21,18 +21,22 @@ console.log("Butter:", butter);
 console.log("Flour:", flour);
 
 let mediumBowl;
+console.log(
+  "\nI declared mediumBowl, without assigning a value, its content is:",
+  mediumBowl
+);
 mediumBowl = butter + sugar;
 
-console.log("We mixed together butter & sugar:");
+console.log("\nWe mixed together butter & sugar:");
 console.log("Content of medium bowl:", mediumBowl);
 
 mediumBowl += flour + chocolate;
 // ^^ This is just another way to write the following instruction:
 // mediumBowl = mediumBowl + flour + chocolate
 
-console.log("We also added flour & chocolate...");
+console.log("\nWe also added flour & chocolate...");
 console.log("Now the content is:", mediumBowl);
 
-console.log("Now we want to empty the medium bowl...");
+console.log("\nNow we want to empty the medium bowl...");
 mediumBowl = null;
 console.log("Now the content of medium bowl is:", mediumBowl);
